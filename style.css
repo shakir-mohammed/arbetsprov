@@ -276,10 +276,7 @@ small{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .scroll .notification,
-    .notifications{
-        /* background-color: lightblue; */
-}
+
     .scroll .notification {
         padding-right: 5%;
         padding-left: 5%;
@@ -301,10 +298,7 @@ small{
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .scroll .notification,
-    .notifications{
-        /* background-color: lightcoral; */
-}
+
     .logo-text {
         font-size: 1.4rem;
     }
