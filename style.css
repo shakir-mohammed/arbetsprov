@@ -1,0 +1,346 @@
+@import url('https://rsms.me/inter/inter.css');
+
+
+html, body {
+    font-family: 'Inter', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    font-size: 1rem;
+    line-height: 19px;
+    font-weight: 400;
+    background-color: #fff;
+    color: var(--very-dark-gray);
+}
+/* globals */
+/* 1. colors */
+:root{
+  --primary-color: #409FFF;
+  --light-gray: #C4C4C4;
+  --very-light-gray: #F8F8FA;
+  --very-dark-gray: #2C3E50;
+}
+
+/* 2. layout */
+.flex{
+    display: flex;
+    align-items: center;
+}
+.container{
+    padding: 0 3% 0 3%;
+}
+
+/* 3. font */
+.bold-large-text{
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--very-dark-gray);
+}
+.bold-medium-text{
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--very-dark-gray);
+}
+.semi-bold{
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--very-dark-gray);
+}
+/* 4. elements */
+.highlighted-text-blue{
+    font-weight: 600;
+    color: var(--primary-color);
+}
+.btn{
+    padding: 0;
+    border: none;
+    background: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+/* header */
+header.header{
+    width: 100%;
+    min-width: 375px;
+    height: 100px;
+    padding-right: 2.6%;
+    padding-left: 2.6%;
+    padding-top: 49px;
+    padding-bottom: 11px;
+    justify-content: space-between;
+}
+.menu .profile, .menu .bell{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.menu .profile{
+    background-image: url("./assets/profile.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid var(--light-gray);
+    margin-left: 13px;
+}
+.menu{
+    position: relative;
+}
+.menu .bell{
+   padding: 11px; 
+}
+.menu .bell:hover{
+    cursor: pointer;
+    background-color: var(--light-gray);
+}
+
+.bell-toggled{
+    transform: rotate(0.1turn);
+    transition: all 400ms ease-in-out;
+    fill: var(--primary-color);
+}
+.profile::before{
+    content: "•";
+    color: red;
+    position: absolute;
+    top: 0;
+    right: 55px;
+}
+
+
+
+
+svg.logo-icon {
+    width: 35px;
+    height: 35px;
+    background-color: var(--primary-color);
+    padding: 6px;
+    border-radius: 20%;
+    fill: white;
+}
+.logo-text{
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--very-dark-gray);
+    margin-left: 3%;
+}
+
+/* END-- header */
+
+/* showcase section */
+section.showcase{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./assets/bg-large.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.showcase-hidden{
+    display: none;
+}
+
+
+/* notification */
+.notifications{
+    height: auto;
+    min-height: 986px;
+    max-width: 100%;
+    min-width: 375px;
+    flex-direction: column;
+    margin: auto;
+    display: none;
+    z-index: 999;
+}
+.notifications-hidden{
+    display: none;
+}
+.notifications .handelser{
+    height: 74px;
+    background-color: var(--very-light-gray);
+    padding-right: 3%;
+    padding-left: 7.5%;
+    justify-content: space-between;
+}
+svg.close{
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    fill: var(--very-dark-gray);
+}
+.scroll{
+    min-height: 986px;
+}
+
+.scroll .title{
+    padding-right: 3%;
+    padding-left: 7.5%;
+    height: 74px;
+    justify-content: space-between;
+}
+
+.scroll .notification{
+    max-width: 100%;
+    min-width: 375px;
+    margin: auto;
+    padding: 3% 3%;
+    line-height: 20px;
+    position: relative;
+    align-items: flex-start;
+    
+    /* transition: 1s ease-in-out;
+*/
+}
+.scroll .notification:hover{
+    background-color: var(--very-light-gray);
+}
+
+.dot{
+    font-size: 9px;
+    color: var(--primary-color);
+    margin-right: 10px;
+    margin-top: 15px;
+}
+.icon{
+    margin-right: 10px;
+    background-color:#FF3843;
+    padding: 8px 8px;
+    border-radius: 50%;
+    font-size: 1.35rem;
+    color: white;
+}
+.fa-bullhorn{
+    background-color:#FF3843;
+}
+.fa-eye{
+    background-color: var(--light-gray);
+}
+.fa-trophy{
+background-color: #2EC973;
+}
+.fa-comment{
+    background-color: var(--light-gray);
+}
+.fa-comments{
+    background-color: var(--primary-color);
+}
+.info{
+    margin-right: 0;
+}
+.timer{
+    margin-left: 0;
+    margin-top: 1px;
+    color: #878B9D;
+}
+small{
+    font-size: 0.75rem;
+}
+
+.call-to-action button{
+    background-color: var(--primary-color);
+    padding: 8px 20px 8px 20px;
+    color: #fff;
+}
+.call-to-action button,
+.survey > button {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: 5px;
+}
+.survey > button{
+    border: 2px solid var(--light-gray);
+    padding: 8px 24px 8px 24px;
+    color: #878B9D;
+}
+
+
+
+
+
+/* media querie */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .scroll .notification,
+    .notifications{
+        /* background-color: red;    */
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .scroll .notification,
+    .notifications{
+        /* background-color: orange */
+}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .scroll .notification,
+    .notifications{
+        /* background-color: lightblue; */
+}
+    .scroll .notification {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+    .logo-text {
+        font-size: 1.2rem;
+    }
+    
+    .menu .profile,
+    .menu .bell {
+        width: 42px;
+        height: 42px;
+    }
+    
+    .profile::before {
+        right: 59px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .scroll .notification,
+    .notifications{
+        /* background-color: lightcoral; */
+}
+    .logo-text {
+        font-size: 1.4rem;
+    }
+    
+    .menu .profile,
+    .menu .bell {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .profile::before {
+        right: 63px;
+    }
+   
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+    .scroll .notification,
+    .notifications{
+        width: 50%; 
+        justify-content: center;
+}
+
+
+
+}

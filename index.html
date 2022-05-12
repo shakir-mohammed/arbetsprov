@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Lägenhetsbyte</title>
+</head>
+<body>
+  <header class="header flex">
+      <div class="logo flex">
+        <svg class="logo-icon"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+            <path
+                d="M257.1 242.4C276.1 220.1 288 191.6 288 160c0-70.58-57.42-128-128-128H32c-17.67 0-32 14.33-32 32v384c0 17.67 14.33 32 32 32l160-.0049c70.58 0 128-57.42 128-128C320 305.3 294.6 264.8 257.1 242.4zM64 96.01h96c35.3 0 64 28.7 64 64s-28.7 64-64 64H64V96.01zM192 416H64v-128h128c35.3 0 64 28.7 64 64S227.3 416 192 416z" />
+        </svg>
+          <p class="logo-text">lägenhetsbyte.se 
+      </div>
+      <nav class="menu flex">
+          
+        <div class="bell">
+            <svg  class="solid-bell" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                    d="M256 32V51.2C329 66.03 384 130.6 384 208V226.8C384 273.9 401.3 319.2 432.5 354.4L439.9 362.7C448.3 372.2 450.4 385.6 445.2 397.1C440 408.6 428.6 416 416 416H32C19.4 416 7.971 408.6 2.809 397.1C-2.353 385.6-.2883 372.2 8.084 362.7L15.5 354.4C46.74 319.2 64 273.9 64 226.8V208C64 130.6 118.1 66.03 192 51.2V32C192 14.33 206.3 0 224 0C241.7 0 256 14.33 256 32H256zM224 512C207 512 190.7 505.3 178.7 493.3C166.7 481.3 160 464.1 160 448H288C288 464.1 281.3 481.3 269.3 493.3C257.3 505.3 240.1 512 224 512z" />
+            </svg>
+        </div>
+        <div class="profile"></div>
+      </nav>
+  </header>
+
+  <section class="showcase"></section>
+    <div class="notifications">
+      <div class="handelser flex">
+          <h2 class="bold-large-text">Händelser</h2>
+            <svg class="close" id="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                <path
+                    d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z" />
+            </svg>
+      </div>
+      <div class="scroll">
+         <div class="title flex">
+             <p class="bold-medium-text">Idag</p>
+             <button class="btn highlighted-text-blue">Rensa</button>
+         </div>
+
+         <div class="notification container flex">
+            <i class="dot fa-solid fa-circle"></i>
+            <i class="icon fa-solid fa-bullhorn  "></i>
+             <div class="info ">
+                 <p>
+                     <span class="semi-bold"> Meddelande från Lägenhetsbyte!</span>
+                         Just nu har vi problem med att skapa annonser, men vi jobbar på det!   
+                </p>
+                <div class="timer">
+                    <i class="fa-regular fa-clock"></i>
+                    <small>Just nu</small>
+                </div>
+            </div>
+         </div>
+
+        
+
+        <div class="notification container flex">
+            <i class="dot fa-solid fa-circle"></i>
+            <i class="icon fa-solid fa-eye  "></i>
+            <div class="info ">
+                <p>
+                    <span class="semi-bold"> Din annonse</span> har besökts
+                    <span class="semi-bold">5 gånger</span> sen förra gången.
+                    
+                </p>
+                <div class="timer">
+                    <i class="fa-regular fa-clock"></i>
+                    <small>För 2 timmar sen</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="notification container flex">
+            <i class="dot fa-solid fa-circle"></i>
+            <i class="icon fa-solid fa-trophy  "></i>
+            <div class="info ">
+                <p>
+                    <span class="semi-bold"> Din annonse</span> är i med kedja som nu har 
+                    <span class="semi-bold">100% intresse</span> 
+                </p>
+                <div class="call-to-action">
+                    <button class="btn">Visa kedja</button>
+                </div>
+                <div class="timer">
+                    <i class="fa-regular fa-clock"></i>
+                    <small>För13 timmar sen</small>
+                </div>
+            </div>
+        </div>
+
+        
+         <div class="notification container flex">
+            <i class="dot fa-solid fa-circle"></i>
+            <i class="icon fa-regular fa-comment"></i>
+             <div class="info ">
+                 <p>
+                     <span class="semi-bold"> Undersökning: </span>
+                     När skulle du helst vilja byta lägenhet?   
+                </p>
+                <div class="survey">
+                    <button class="btn">1</button>
+                    <button class="btn ">2</button>
+                    <button class="btn">3</button>
+                </div>
+                <div class="timer">
+                    <i class="fa-regular fa-clock"></i>
+                    <small>För 8 timmar sedan</small>
+                </div>
+            </div>
+         </div>
+
+        <div class="title flex">
+            <p class="bold-medium-text">Den här veckan</p>
+            <button class="btn highlighted-text-blue">Rensa</button>
+        </div>
+
+        <div class="notification container flex">
+            <i class="dot fa-solid fa-circle"></i>
+            <i class="icon fa-regular fa-comments"></i>
+            <div class="info ">
+                <p>
+                    Du har <span class="semi-bold"> 6 obesvarade </span>
+                    chattar. Svar så fort som möjligt
+                </p>
+                <div class="timer">
+                    <i class="fa-regular fa-clock"></i>
+                    <small>För 8 timmar sedan</small>
+                </div>
+            </div>
+        </div>
+      </div>
+  </div>
+
+
+  <script src="app.js" def></script>
+</body>
+</html>
+
+
