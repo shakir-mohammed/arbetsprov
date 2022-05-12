@@ -16,6 +16,7 @@ body{
     font-weight: 400;
     background-color: #fff;
     color: var(--very-dark-gray);
+    position: relative;
 }
 /* globals */
 /* 1. colors */
@@ -67,6 +68,7 @@ body{
 
 /* header */
 header.header{
+    background-color: white;
     width: 100%;
     min-width: 375px;
     height: 100px;
@@ -75,8 +77,12 @@ header.header{
     padding-top: 49px;
     padding-bottom: 11px;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
-.menu .profile, .menu .bell{
+
+.menu .profile {
     width: 40px;
     height: 40px;
     display: flex;
@@ -84,6 +90,14 @@ header.header{
     justify-content: center;
     border-radius: 50%;
 }
+
+.menu .bell{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 5px 5px;
+}
+
 .menu .profile{
     background-image: url("./assets/profile.jpeg");
     background-position: center;
@@ -95,9 +109,7 @@ header.header{
 .menu{
     position: relative;
 }
-.menu .bell{
-   padding: 11px; 
-}
+
 .menu .bell:hover{
     cursor: pointer;
     background-color: var(--light-gray);
@@ -105,6 +117,8 @@ header.header{
 
 .bell-toggled{
     transform: rotate(0.1turn);
+}
+.toggled{
     fill: var(--primary-color);
 }
 .menu .bell,
@@ -115,13 +129,7 @@ header.header{
     -ms-transition: all 400ms ease-in-out;
     -o-transition: all 400ms ease-in-out;
 }
-.profile::before{
-    content: "•";
-    color: red;
-    position: absolute;
-    top: 0;
-    right: 55px;
-}
+
 
 
 
@@ -273,6 +281,17 @@ small{
 
 
 
+/* small devices */
+@media screen and (max-width: 375px){
+    .notifications .handelser{
+        position: fixed;
+        top: 100px;
+        width: 100%;
+        background-color: var(--very-light-gray);
+        z-index: 999;
+    }
+    
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -285,8 +304,7 @@ small{
         font-size: 1.2rem;
     }
     
-    .menu .profile,
-    .menu .bell {
+    .menu .profile {
         width: 42px;
         height: 42px;
     }
@@ -303,8 +321,7 @@ small{
         font-size: 1.4rem;
     }
     
-    .menu .profile,
-    .menu .bell {
+    .menu .profile {
         width: 45px;
         height: 45px;
     }
